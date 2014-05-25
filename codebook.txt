@@ -1,0 +1,256 @@
+Delimiter
+======
+The data uses "," (comma) separator.
+
+Method of feature selection 
+===========================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals were captured at a constant rate of 50 Hz.  Similarly, the acceleration signal was then separated into body and gravity acceleration signals (body accelaration time-XYZ and gravity accelaration time-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (body accelaration jerk time-XYZ and body gyroscope time-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (body accelaration magnitude time, gravity accelaration magnitude time, body accelaration magnitude jerk time, body gyroscope magnitude time, body gyroscope jerk magnitude time). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing body accelaration frequence-XYZ, body accelaration jerk frequence-XYZ, body gyroscope frequence-XYZ, body accelaration jerk magnitude frequence, body gyroscope magnitude frequence, body gyroscope jerk magnitude frequence. 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+body accelaration time-XYZ
+gravity accelaration time-XYZ
+body accelaration jerk time-XYZ
+body gyroscope time-XYZ
+body gyroscope jerk time-XYZ
+body accelaration magnitude time
+gravity accelaration magnitude time
+tBodyAccJerkMag body accelaration magnitude jerk time
+body gyroscope magnitude time 
+body gyroscope jerk magnitude time 
+body accelaration frequence-XYZ
+body accelaration jerk frequence-XYZ
+body gyroscope frequence-XYZ
+body accelaration magnitude frequence
+body accelaration jerk magnitude frequence
+body gyroscope magnitude frequence
+body gyroscope jerk magnitude frequence
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+The following contains description of variables in the dataset:
+=========================================
+
+1. subid
+      This is a subject ID of the 30 volunteers, within an age bracket of 19-48 years, who participated in this experiment. 
+
+2. act
+    This is the activity description of the activities performed by the subjects wearing a Samsung smartphone on the waist. 
+
+    The following are six activities:
+    WALKING, 
+    WALKING_UPSTAIRS, 
+    WALKING_DOWNSTAIRS, 
+    SITTING, 
+    STANDING, 
+    LAYING
+
+  The below contains description of variables describing the activity that the sensor is measuring. 
+
+3. "body accelaration time mean() x"
+    This variable measures mean of body accelaration time doamin signal on X axis
+
+4. "body accelaration time mean() y"                  
+    This variable measures mean of body accelaration time doamin signal on Y axis
+
+5. "body accelaration time mean() z"
+    This variable measures mean of body accelaration time doamin signal on Z axis
+
+6. "gravity accelaration time mean() x"
+    This variable measures mean of gravity accelaration time doamin signal on X axis
+
+7. "gravity accelaration time mean() y"
+    This variable measures mean of gravity accelaration time doamin signal on Y axis
+
+8. "gravity accelaration time mean() z"               
+    This variable measures mean of gravity accelaration time doamin signal on Z axis 
+
+9. "body accelaration jerk time mean() x"
+    This variable measures mean of body accelaration jerk time doamin signal on x axis 
+
+10. "body accelaration jerk time mean() y"             
+    This variable measures mean of body accelaration jerk time doamin signal on y axis 
+
+11. "body accelaration jerk time mean() z"
+    This variable measures mean of body accelaration jerk time doamin signal on z axis 
+
+12. "body gyroscope time mean() x"                     
+    This variable measures mean of body gyroscope time doamin signal on x axis 
+
+13. "body gyroscope time mean() y"
+    This variable measures mean of body gyroscope time doamin signal on y axis 
+
+14. "body gyroscope time mean() z"                     
+    This variable measures mean of body gyroscope time doamin signal on z axis 
+
+15. "body gyroscope jerk time mean() x"
+    This variable measures mean of body gyroscope jerk time doamin signal on x axis 
+
+16. "body gyroscope jerk time mean() y"                
+    This variable measures mean of body gyroscope jerk time doamin signal on y axis 
+
+17. "body gyroscope jerk time mean() z"
+    This variable measures mean of body gyroscope jerk time doamin signal on z axis 
+
+18. "body accelaration magnitude jerk time mean()"
+    This variable measures mean of body accelaration magnitude jerk time doamin signal. 
+
+19. "gravity accelaration magnitude time mean()"
+    This variable measures mean of gravity accelaration magnitude time doamin signal. 
+
+20. "body accelaration jerk magnitude time mean()"     
+    This variable measures mean of body accelaration jerk magnitude time doamin signal. 
+
+21. "body gyroscope magnitude time mean()"
+    This variable measures mean of body gyroscope magnitude time doamin signal. 
+
+22. "body gyroscope jerk magnitude time mean()"        
+    This variable measures mean of body gyroscope jerk magnitude time doamin signal. 
+
+23. "body accelaration frequence mean() x"
+    This variable measures mean of body accelaration frequence signal on x axis. 
+
+24. "body accelaration frequence mean() y"             
+    This variable measures mean of body accelaration frequence signal on y axis. 
+
+25. "body accelaration frequence mean() z"
+    This variable measures mean of body accelaration frequence signal on z axis. 
+
+26. "body accelaration jerk frequence mean() x"        
+    This variable measures mean of body accelaration jerk frequence signal on x axis. 
+
+27. "body accelaration jerk frequence mean() y"
+    This variable measures mean of body accelaration jerk frequence signal on y axis. 
+
+28. "body accelaration jerk frequence mean() z"        
+    This variable measures mean of body accelaration jerk frequence signal on z axis. 
+
+29. "body gyroscope frequence mean() x"
+    This variable measures mean of body gyroscope frequence on x axis. 
+
+30. "body gyroscope frequence mean() y"                
+    This variable measures mean of body gyroscope frequence on y axis. 
+
+31. "body gyroscope frequence mean() z"
+    This variable measures mean of body gyroscope frequence on z axis. 
+
+32. "body accelaration magnitude frequence mean()"     
+    This variable measures mean of body accelaration magnitude frequence. 
+
+33. "body accelaration jerk magnitude frequence mean()" 
+    This variable measures mean of body accelaration jerk magnitude frequence. 
+
+34. "body gyroscope magnitude frequence mean()"        
+    This variable measures mean of body gyroscope magnitude frequence. 
+
+35. "body gyroscope jerk magnitude frequence mean()"
+    This variable measures mean of body gyroscope jerk magnitude frequence. 
+
+36. "body accelaration time std() x"                   
+    This variable measures std of body accelaration time doamin signal on X axis
+
+37. "body accelaration time std() y"
+    This variable measures std of body accelaration time doamin signal on Y axis
+
+38. "body accelaration time std() z"                   
+    This variable measures std of body accelaration time doamin signal on Z axis
+
+39. "gravity accelaration time std() x"
+    This variable measures std of gravity accelaration time doamin signal on X axis
+
+40. "gravity accelaration time std() y"                
+    This variable measures std of gravity accelaration time doamin signal on Y axis
+
+41. "gravity accelaration time std() z"
+    This variable measures std of gravity accelaration time doamin signal on Z axis 
+
+42. "body accelaration jerk time std() x"              
+    This variable measures std of body accelaration jerk time doamin signal on x axis 
+
+43. "body accelaration jerk time std() y"
+    This variable measures std of body accelaration jerk time doamin signal on y axis 
+
+44. "body accelaration jerk time std() z"              
+    This variable measures std of body accelaration jerk time doamin signal on z axis 
+
+45. "body gyroscope time std() x"
+    This variable measures std of body gyroscope time doamin signal on x axis
+
+46. "body gyroscope time std() y"                      
+    This variable measures std of body gyroscope time doamin signal on y axis 
+
+47. "body gyroscope time std() z"
+    This variable measures std of body gyroscope time doamin signal on z axis 
+
+48. "body gyroscope jerk time std() x"                 
+    This variable measures std of body gyroscope jerk time doamin signal on x axis 
+
+49. "body gyroscope jerk time std() y"
+    This variable measures std of body gyroscope jerk time doamin signal on y axis 
+
+50. "body gyroscope jerk time std() z"                 
+    This variable measures std of body gyroscope jerk time doamin signal on z axis 
+
+51. "body accelaration magnitude jerk time std()"       
+    This variable measures std of body accelaration magnitude jerk time doamin signal. 
+
+52. "gravity accelaration magnitude time std()"        
+    This variable measures std of gravity accelaration magnitude time doamin signal. 
+
+53. "body accelaration jerk magnitude time std()"
+    This variable measures std of body accelaration jerk magnitude time doamin signal. 
+
+54. "body gyroscope magnitude time std()"              
+    This variable measures std of body gyroscope magnitude time doamin signal. 
+
+55. "body gyroscope jerk magnitude time std()"
+    This variable measures std of body gyroscope jerk magnitude time doamin signal. 
+
+56. "body accelaration frequence std() x"              
+    This variable measures std of body accelaration frequence signal on x axis. 
+
+57. "body accelaration frequence std() y"
+    This variable measures std of body accelaration frequence signal on y axis. 
+
+58. "body accelaration frequence std() z"              
+    This variable measures std of body accelaration frequence signal on z axis. 
+
+59. "body accelaration jerk frequence std() x"
+    This variable measures std of body accelaration jerk frequence signal on x axis. 
+
+60. "body accelaration jerk frequence std() y"         
+    This variable measures std of body accelaration jerk frequence signal on y axis. 
+
+61. "body accelaration jerk frequence std() z"
+    This variable measures std of body accelaration jerk frequence signal on z axis. 
+
+62. "body gyroscope frequence std() x"                 
+    This variable measures std of body gyroscope frequence on x axis. 
+
+63. "body gyroscope frequence std() y"
+    This variable measures std of body gyroscope frequence on y axis. 
+
+64. "body gyroscope frequence std() z"                 
+    This variable measures std of body gyroscope frequence on z axis. 
+
+65. "body accelaration magnitude frequence std()"
+    This variable measures std of body accelaration magnitude frequence. 
+
+66. "body accelaration jerk magnitude frequence std()" 
+    This variable measures std of body accelaration jerk magnitude frequence. 
+
+67. "body gyroscope magnitude frequence std()"
+    This variable measures std of body gyroscope magnitude frequence. 
+
+68. "body gyroscope jerk magnitude frequence std()" 
+    This variable measures std of body gyroscope jerk magnitude frequence. 
+
