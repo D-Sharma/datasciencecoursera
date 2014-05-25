@@ -138,6 +138,8 @@ colnames(data) <- tolower(colnames(data))
 
 #Step 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
+library(reshape2)
+
 # Reshape the data
 datamelt <- melt(data, id = c("subid", "act"), measure.vars=(colnames(data[,3:68])))
 
